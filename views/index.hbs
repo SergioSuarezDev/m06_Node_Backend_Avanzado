@@ -1,0 +1,77 @@
+<div class="container-fluid">
+    Bienvenido a la tarea de fundamentos de nodejs, express, mongodb,
+    <br/>
+    <br/>
+    <h3>Filtros:</h3>
+    <form action="?" method="get" class="needs-validation" novalidate="">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="name">name</label>
+                <input name="name" type="text" class="form-control" placeholder="iPhone" value="" required="">
+            </div>
+
+            <div class="col-md-6 mb-3">
+                <label for="prize">Precio</label>
+                <input name="prize" type="text" class="form-control" placeholder="1-50" value="" required="">
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+                <div class="d-block my-3">
+                    <label for="name">Tipo</label>
+                    <div class="custom-control custom-radio">
+                        <input id="venta" name="type" value="venta" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="venta">Venta</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="busqueda" name="type" value="busqueda" type="radio" class="custom-control-input" required="">
+                        <label class="custom-control-label" for="busqueda">Busqueda</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="todo" name="type" value="todo" type="radio" class="custom-control-input" checked="" required="">
+                        <label class="custom-control-label" for="todo">Todo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Tags (permite seleccionar varios)</label>
+                    <select name="tags" multiple class="form-control" id="tags">
+                        {{#each tags}}
+                        <option>{{ this }}</option>
+                        {{/each}}
+                    </select>
+                </div>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">APLICAR FILTROS</button>
+        <button class="btn btn-secondary btn-lg btn-block" type="reset">BORRAR</button>
+
+    </form>
+    <hr class="mb-4">
+    <h3>Anuncios publicados:</h3>
+    <br/>
+    <br/>
+    <div class="card-columns">
+        {{#each ads}}
+        <div class="card" style="width: 20rem;">
+            <div class="card-header card-title">
+                <h2><i class="material-icons">inbox</i> {{this.name}}</h2>
+            </div>
+            <div class="card-body">
+                <h6 class="card-subtitle mb-4">Id: {{this._id}}</h6>
+                <li>Tipo: {{this.type}}</li>
+                <li>Precio: {{this.prize}}</li>
+                <li>Tags: {{this.tags}}</li>
+                <picture>
+                    <img src="images/{{this.picture}}" alt="{{this.name}}">
+                </picture>
+
+            </div>
+        </div>
+        <br/> {{/each}}
+    </div>
+</div>

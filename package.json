@@ -1,0 +1,28 @@
+{
+  "name": "nodepop",
+  "version": "0.2.1",
+  "description": "Servicio REST usando NodeJS con un front para mostrasr artículos",
+  "author": "Sergio Suárez - Keepcoding",
+  "copyright": "(c) SergioSuarezDev 2019",
+  "license": "(ISC OR GPL-3.0)",
+  "private": true,
+  "scripts": {
+    "start": "node --max-old-space-size=128 ./bin/www",
+    "dev": "cross.env DEBUG=nodepop:* nodemon",
+    "install_db": "node ./db/install_db"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "hbs": "^4.0.3",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.4.22",
+    "morgan": "~1.9.0",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}

@@ -1,0 +1,89 @@
+{
+    "ads": [ 
+        {
+            "name": "Bicicleta", 
+            "sale": true,
+            "prize": 230.15,
+            "picture": "bicicleta.jpg",
+            "tags": [ 
+                "lifestyle", 
+                "motor"
+            ]
+         }, 
+         {
+            "name": "iPhone 7", 
+            "sale": false,
+            "prize": 50.00,
+            "picture": "iphone.jpg",
+            "tags": [ 
+                "lifestyle", 
+                "mobile"
+            ]
+        },
+        { 
+            "name" : "Lapiz", 
+            "sale": false,
+            "prize" : 5.0, 
+            "picture" : "lapiz.jpg", 
+            "tags" : [
+                "work"
+            ]
+        },
+        { 
+            "name" : "Cama", 
+            "sale": false,
+            "prize" : 120.3, 
+            "picture" : "cama.jpg", 
+            "tags" : [
+                "lifestyle"
+            ]
+        },
+        { 
+            "name" : "Coche", 
+            "sale": true,
+            "prize" : 3500.30, 
+            "picture" : "coche.jpg", 
+            "tags" : [
+                "motor", 
+                "lifestyle"
+            ]
+        },
+        { 
+            "name" : "Sofa", 
+            "sale": true,
+            "prize" : 239.0, 
+            "picture" : "sofa.jpg", 
+            "tags" : [
+                "lifestyle" 
+            ]
+        },
+        { 
+            "name" : "Piso", 
+            "sale": false,
+            "prize" : 350.0, 
+            "picture" : "piso.jpg", 
+            "tags" : [
+                "lifestyle"
+            ]
+        },
+        { 
+            "name" : "iPad", 
+            "sale": true,
+            "prize" : 400.34, 
+            "picture" : "ipad.jpg", 
+            "tags" : [
+                "mobile", 
+                "work"
+            ]
+        },
+        { 
+            "name" : "Zapatillas", 
+            "sale": false,
+            "prize" : 38.34, 
+            "picture" : "zapatillas.jpg", 
+            "tags" : [
+                "lifestyle"
+            ]
+        }        
+    ]
+    }
